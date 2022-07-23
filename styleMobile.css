@@ -42,7 +42,6 @@ header {
     height: 334px;
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
-    ;
 }
 
 header img {
@@ -169,7 +168,7 @@ main {
     scroll-snap-type: x proximity;
 }
 
-.main--tables--container .arrowLeft {
+.main--tables--container .arrowLeftCurrency {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -182,7 +181,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--tables--container .arrowRight {
+.main--tables--container .arrowRightCurrency {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -566,13 +565,14 @@ main {
     grid-row: 5;
     display: flex;
     width: auto;
-    height: 270px;
+    height: 280px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+
 }
 
-.main--plans--container-cards .arrowLeft {
+.main--plans--container-cards .arrowLeftPlans {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -585,7 +585,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--plans--container-cards .arrowRight {
+.main--plans--container-cards .arrowRightPlans {
     position: absolute;
     width: 24px;
     height: 24px;
