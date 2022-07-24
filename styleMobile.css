@@ -545,7 +545,6 @@ main {
 
 .container-card {
     position: relative;
-    margin: 0 30px;
 }
 
 .main--plans-container h2 {
@@ -561,23 +560,31 @@ main {
     color: #757575;
 }
 
-.main--plans--container-cards {
+.container_slider {
+    position: relative;
+    width: 90%;
+    max-width: 320px;
+    margin: auto;
+    overflow: hidden;
     grid-row: 5;
-    display: flex;
-    width: auto;
-    height: 280px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-
 }
 
-.main--plans--container-cards .arrowLeftPlans {
+.main--plans--container-cards {
+    display: flex;
+    width: 300%;
+    height: 280px;
+    margin-left: -100%;
+}
+
+.slider_button {
     position: absolute;
+    top: 50%;
     width: 24px;
     height: 24px;
-    margin-left: 10px;
-    margin-top: 135px;
+}
+
+.arrowLeftPlans {
+    left: 0;
     background-image: url("./assets/icons/grayarrowleft.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
@@ -585,12 +592,8 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--plans--container-cards .arrowRightPlans {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: 285px;
-    margin-top: 135px;
+.arrowRightPlans {
+    right: 0;
     background-image: url("./assets/icons/grayarrowright.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
@@ -598,7 +601,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--plans-container .plans--container-card {
+.container-card .plans--container-card {
     scroll-snap-align: center;
     width: 190px;
     height: 240px;
