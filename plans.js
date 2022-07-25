@@ -32,11 +32,9 @@ function movePrev() {
 }
 
 planArrowRight.addEventListener('click', () => {
-  console.log("click");
   moveNext()
 })
 
 planArrowLeft.addEventListener('click', () => {
-  console.log("click");
   movePrev()
 })

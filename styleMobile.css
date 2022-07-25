@@ -161,19 +161,34 @@ main {
 /**************** Inicio tablas ******************/
 
 .main--tables--container {
+    position: relative;
     display: flex;
+    width: 90%;
+    max-width: 320px;
     height: 350px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    margin: auto;
+    *overflow: hidden;
 }
 
-.main--tables--container .arrowLeftCurrency {
+.slider_tables {
+    display: flex;
+    width: 200%;
+    margin-left: -100%;
+}
+
+.currency-table {
+    position: relative;
+}
+
+.slider_btn {
     position: absolute;
+    top: 38%;
     width: 24px;
     height: 24px;
-    margin-left: 10px;
-    margin-top: 135px;
+}
+
+.arrowLeftCurrency {
+    left: 0;
     background-image: url("./assets/icons/blackarrowleft.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
@@ -181,12 +196,8 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--tables--container .arrowRightCurrency {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: 285px;
-    margin-top: 135px;
+.arrowRightCurrency {
+    right: 0;
     background-image: url("./assets/icons/blackarrowright.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
@@ -197,12 +208,9 @@ main {
 /**************** Inicio Monedas ****************/
 
 .main--currency--table {
-    scroll-snap-align: center;
-    width: 70%;
-    min-width: 235px;
-    /*max-width: 500px;*/
+    width: 50%;
     height: auto;
-    margin: 0 60px;
+    margin: 0 25px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     font-family: "Inter", "sans-serif";
@@ -309,11 +317,9 @@ main {
 /**************** Inicio Comisiones ****************/
 
 .main--commissions--table {
-    width: 70%;
-    min-width: 235px;
-    /*max-width: 500px;*/
+    width: 50%;
     height: auto;
-    margin-right: 45px;
+    margin: 0 25px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     font-family: "Inter", "sans-serif";
@@ -543,10 +549,6 @@ main {
     text-align: center;
 }
 
-.container-card {
-    position: relative;
-}
-
 .main--plans-container h2 {
     grid-row: 1;
     font-size: 2.4rem;
@@ -562,11 +564,11 @@ main {
 
 .container_slider {
     position: relative;
+    grid-row: 5;
     width: 90%;
     max-width: 320px;
     margin: auto;
     overflow: hidden;
-    grid-row: 5;
 }
 
 .main--plans--container-cards {
@@ -574,6 +576,10 @@ main {
     width: 300%;
     height: 280px;
     margin-left: -100%;
+}
+
+.container-card {
+    position: relative;
 }
 
 .slider_button {
@@ -777,4 +783,9 @@ footer .footer--table-icon {
     background-repeat: no-repeat;
 }
 
-
+@media (min-width: 320px) {
+    body {
+        position: absolute;
+        background-image: url(./assets/images/Illustrations.jpg);
+    }
+}
