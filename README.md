@@ -1,2 +1,2 @@
-# mobile-first-batatabit
-Proyecto para portafolio Platzi
+BatataBit
+Crypto landing page - Mobile First
