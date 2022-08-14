@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/icons/footer-icon.svg">
-    <link rel="stylesheet" href="styleMobile.css">
+    <link rel="stylesheet" href="./css/styleMobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 420px)" href="./css/styletablet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
 </head>
 <body>
     <header>
-        <img src="./assets/images/logo1.svg" alt="">
+        <img src="./assets/images/logo1.svg" alt="Batabit">
         <div class="header--title-container">
             <h1>
                 La próxima revolución en el intercambio de criptomonedas.
@@ -129,9 +130,9 @@
             <h2>Escoge el plan que mejor se ajuste a ti.</h2>
             <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             <div class="container_slider">
-                <article class="main--plans--container-cards" id="slider_plans">
+                <div class="main--plans--container-cards" id="slider_plans">
                     <div class="container-card">
-                        <article class="plans--container-card plan_annual">
+                        <div class="plans--container-card plan_annual">
                             <div class="plans--container-group1">
                                 <h3>Pago Anual</h3>
                                 <p class="dollar-symbol">$</p>
@@ -141,11 +142,11 @@
                                 <p class="description-plan">*Ahorras $129 comparado al plan mensual.</p>
                                 <button class="choose">Escoger este <span></span></button>
                             </div>
-                        </article>
+                        </div>
                         <p class="recomend">Recomendado</p>
                     </div>
                     <div class="container-card">
-                        <article class="plans--container-card plan_biannual">
+                        <div class="plans--container-card plan_biannual">
                             <div class="plans--container-group1">
                                 <h3>Pago semestral</h3>
                                 <p class="dollar-symbol">$</p>
@@ -155,10 +156,10 @@
                                 <p class="description-plan">*Ahorras $64 comparado al plan mensual.</p>
                                 <button class="choose">Escoger este <span></span></button>
                             </div>
-                        </article>
+                        </div>
                         <p class="recomend">Recomendado</p>
                     </div><div class="container-card">
-                        <article class="plans--container-card plan_quarterly">
+                        <div class="plans--container-card plan_quarterly">
                             <div class="plans--container-group1">
                                 <h3>Pago Trimestral</h3>
                                 <p class="dollar-symbol">$</p>
@@ -168,10 +169,10 @@
                                 <p class="description-plan">*Ahorras $32 comparado al plan mensual.</p>
                                 <button class="choose">Escoger este <span></span></button>
                             </div>
-                        </article>
+                        </div>
                         <p class="recomend">Recomendado</p>
                     </div>
-                </article>
+                </div>
                 <span class="slider_button arrowLeftPlans"></span>
                 <span class="slider_button arrowRightPlans"></span>
             </div> 
@@ -191,7 +192,7 @@
             </tr>
         </table>
     </footer>
-    <script src="./plans.js"></script>
-    <script src="./currency.js"></script>
+    <script src="./js/plans.js"></script>
+    <script src="./js/currency.js"></script>
 </body>
 </html>

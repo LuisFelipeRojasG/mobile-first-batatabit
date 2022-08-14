@@ -25,11 +25,16 @@
 }
 
 html {
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 420px;
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
 /************ Inicio Header *******************/
 
 header {
@@ -37,8 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    min-width: 320px;
+    width: auto;
     height: 334px;
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
@@ -102,7 +106,7 @@ header img {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url('./assets/icons/blackarrowdown.svg');
+    background-image: url('../assets/icons/blackarrowdown.svg');
 }
 
 /******************* Fin header *******************/
@@ -136,7 +140,7 @@ main {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 40px;
-    background-image: url('./assets/images/Bitcoin.svg');
+    background-image: url('../assets/images/Bitcoin.svg');
     /* Buena práctica para imágenes*/
     background-size: cover;
     background-position: center;
@@ -178,6 +182,7 @@ main {
 
 .currency-table {
     position: relative;
+    margin: 0 9vw;
 }
 
 .slider_btn {
@@ -189,7 +194,7 @@ main {
 
 .arrowLeftCurrency {
     left: 0;
-    background-image: url("./assets/icons/blackarrowleft.svg");
+    background-image: url("../assets/icons/blackarrowleft.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
     background-position: center;
@@ -198,7 +203,7 @@ main {
 
 .arrowRightCurrency {
     right: 0;
-    background-image: url("./assets/icons/blackarrowright.svg");
+    background-image: url("../assets/icons/blackarrowright.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
     background-position: center;
@@ -210,7 +215,7 @@ main {
 .main--currency--table {
     width: 50%;
     height: auto;
-    margin: 0 25px;
+    *margin: 0 25px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     font-family: "Inter", "sans-serif";
@@ -281,7 +286,7 @@ main {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url("./assets/icons/trending-down.svg");
+    background-image: url("../assets/icons/trending-down.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -292,7 +297,7 @@ main {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url("./assets/icons/trending-up.svg");
+    background-image: url("../assets/icons/trending-up.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -319,7 +324,7 @@ main {
 .main--commissions--table {
     width: 50%;
     height: auto;
-    margin: 0 25px;
+    *margin: 0 25px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     font-family: "Inter", "sans-serif";
@@ -407,7 +412,7 @@ main {
 .main--batata {
     position: absolute;
     margin-top: -885px;
-    margin-left: 140px
+    margin-left: 45vw;
 }
 
 /************ Inicio detalles Prod ***********/ 
@@ -463,7 +468,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('./assets/icons/clock.svg');
+    background-image: url('../assets/icons/clock.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -474,7 +479,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('./assets/icons/eye.svg');
+    background-image: url('../assets/icons/eye.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -485,7 +490,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('./assets/icons/dollar-sign.svg');
+    background-image: url('../assets/icons/dollar-sign.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -496,7 +501,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('./assets/icons/check-circle.svg');
+    background-image: url('../assets/icons/check-circle.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -522,7 +527,7 @@ main {
     max-width: 516px;
     height: 387px;
     margin-bottom: 64px;
-    background-image: url('./assets/images/bitcoinbaby1.jpg');
+    background-image: url('../assets/images/bitcoinbaby1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -542,10 +547,11 @@ main {
 
 .main--plans-container {
     display: grid;
-    grid-template-columns: 320px;
+    grid-template-columns: auto;
     grid-template-rows: 60px 24px 40px 30px 260px 64px;
     width: auto;
     height: 490px;
+    padding: 0 5vw;
     text-align: center;
 }
 
@@ -558,7 +564,7 @@ main {
 .main--plans-container > p { 
     grid-row: 3;
     font-size: 1.4rem;
-    padding: 0 24px;
+    padding: 0 11px;
     color: #757575;
 }
 
@@ -566,20 +572,22 @@ main {
     position: relative;
     grid-row: 5;
     width: 90%;
-    max-width: 320px;
     margin: auto;
     overflow: hidden;
 }
 
 .main--plans--container-cards {
     display: flex;
-    width: 300%;
+    justify-content: center;
+    width: 82vw;
     height: 280px;
-    margin-left: -100%;
 }
 
 .container-card {
     position: relative;
+    display: flex;
+    width: 200px;
+    margin: 0 40px;
 }
 
 .slider_button {
@@ -591,7 +599,7 @@ main {
 
 .arrowLeftPlans {
     left: 0;
-    background-image: url("./assets/icons/grayarrowleft.svg");
+    background-image: url("../assets/icons/grayarrowleft.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
     background-position: center;
@@ -600,7 +608,7 @@ main {
 
 .arrowRightPlans {
     right: 0;
-    background-image: url("./assets/icons/grayarrowright.svg");
+    background-image: url("../assets/icons/grayarrowright.svg");
     /* Buena práctica para imágenes*/
     background-size: cover;
     background-position: center;
@@ -611,7 +619,7 @@ main {
     scroll-snap-align: center;
     width: 190px;
     height: 240px;
-    margin: 0 50px;
+    *margin: 0 50px;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -708,7 +716,7 @@ main {
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    background-image: url('./assets/icons/yellowarrowright.svg');
+    background-image: url('../assets/icons/yellowarrowright.svg');
 }
 
 /************** Fin planes *********************/
@@ -716,7 +724,7 @@ main {
 .recomend {
     position: absolute;
     top: 4px;
-    margin-left: 97px;
+    margin-left: 45px;
     width: 101px;
     height: 31px;
     border-radius: 8px;
@@ -732,7 +740,7 @@ main {
 
 
 footer {
-    width: 320px;
+    width: auto;
     height: 150px;
     background-color: var(--bitcoin-orange);
 }
@@ -777,15 +785,9 @@ footer .footer--table-icon {
     height: 50px;
     margin-left: 52px;
     margin-top: 51px;
-    background-image: url('./assets/icons/footer-icon.svg');
+    background-image: url('../assets/icons/footer-icon.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@media (min-width: 320px) {
-    body {
-        position: absolute;
-        background-image: url(./assets/images/Illustrations.jpg);
-    }
-}
