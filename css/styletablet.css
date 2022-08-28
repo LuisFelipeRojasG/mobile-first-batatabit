@@ -1,5 +1,27 @@
-html {
-    max-width: 572px;
-    font-size: 62.5%;
-    font-family: "DM Sans", sans-serif;
+body {
+    *display: flex;
+    *justify-content: center;
+    *flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+header, main, footer {
+    display: none;
+}
+
+.appNoExist {
+    display: inline;
+    width: 100%;
+    height: 100vh;
+    background: url(../assets/images/Illustrations.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F7931A;
+}
+
+.appNoExist H1 {
+    margin-top: 20px;
+    text-align: center;
 }

@@ -27,6 +27,7 @@
 html {
     min-width: 320px;
     max-width: 420px;
+    overflow-x: hidden;
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
 }
@@ -34,7 +35,10 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
 }
+
 /************ Inicio Header *******************/
 
 header {
@@ -42,7 +46,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: auto;
+    width: 100vw;
     height: 334px;
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
@@ -58,7 +62,7 @@ header img {
 .header--title-container {
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
+    max-width: 420px;
     height: 218px;
     margin-top: 50px;
     text-align: center;
@@ -114,8 +118,9 @@ header img {
 /******************* inicio main ********************/
 
 main {
-    width: 100%;
+    width: 100vw;
     height: auto;
+    overflow-x: hidden;
     background-color: var(--just-white);
 }
 
@@ -123,7 +128,6 @@ main {
     width: 100%;
     height: auto;
     padding-top: 60px;
-    /*padding-bottom: 30px;*/
     text-align: center;
 }
 
@@ -171,18 +175,17 @@ main {
     max-width: 320px;
     height: 350px;
     margin: auto;
-    *overflow: hidden;
 }
 
 .slider_tables {
     display: flex;
-    width: 200%;
-    margin-left: -100%;
+    justify-content: flex-end;
+    width: 205%;
 }
 
 .currency-table {
     position: relative;
-    margin: 0 9vw;
+    margin: 0 11vw;
 }
 
 .slider_btn {
@@ -311,7 +314,6 @@ main {
     width: 200px;
     height: 30px;
     margin: 0 auto;
-    /*margin-bottom: 60px;*/
     border-radius: 8px;
     font-family: "Inter", "sans-serif";;
     background-color: var(--soft-orange);
@@ -399,7 +401,6 @@ main {
     width: 200px;
     height: 30px;
     margin: 0 auto;
-    /*margin-bottom: 60px;*/
     border-radius: 8px;
     font-family: "Inter", "sans-serif";;
     background-color: var(--soft-blue);
@@ -411,26 +412,27 @@ main {
 
 .main--batata {
     position: absolute;
-    margin-top: -885px;
-    margin-left: 45vw;
+    margin-top: -890px;
+    margin-left: 43vw;
 }
 
 /************ Inicio detalles Prod ***********/ 
 
 .main-product-detail {
     position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 20px 10px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 880px;
+    padding: 20px 0 30px;
     background-color: var(--warm-black);
 }
 
 .product-detail--title {
-    width: 90%;
+    position: absolute;
+    width: 288px;
     min-height: 120px;
     height: auto;
-    margin: 0 auto;
     margin-top: 30px;
     text-align: center;
 }
@@ -449,6 +451,13 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--card-text);
+}
+
+.product-cards--container {
+    position: absolute;
+    top: 180px;
+    width: 95vw;
+    height: auto;
 }
 
 .product-detail--card {
@@ -523,6 +532,7 @@ main {
 /************** Fin detalle prod ***************/
 
 .bitcoin-img-container {
+    position: relative;
     width: 100%;
     max-width: 516px;
     height: 387px;
@@ -534,7 +544,7 @@ main {
 }
 
 .bitcoin-img-container h2 {
-    position: relative;
+    position: absolute;
     top: 64px;
     left: calc(50% - 80px);
     font-size: 2.4rem;
@@ -571,23 +581,23 @@ main {
 .container_slider {
     position: relative;
     grid-row: 5;
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
 .main--plans--container-cards {
     display: flex;
-    justify-content: center;
-    width: 82vw;
+    justify-content: flex-end;
+    width: 100vw;
     height: 280px;
 }
 
 .container-card {
     position: relative;
     display: flex;
-    width: 200px;
-    margin: 0 40px;
+    width: 100%;
+    margin: 0 28%;
 }
 
 .slider_button {
@@ -704,7 +714,6 @@ main {
     font-family: 'DM Sans';
     font-size: 1.4rem;
     font-weight: 700;
-    /*padding: 15px 13px 15px 16px;*/
     background: var(--off-white);
     border: 2px solid #F7931A;
     border-radius: 4px;
@@ -740,13 +749,12 @@ main {
 
 
 footer {
-    width: auto;
+    width: 100vw;
     height: 150px;
     background-color: var(--bitcoin-orange);
 }
 
 footer a {
-    /*position: absolute;*/
     margin-left: 65px;
     font-size: 1.4rem;
     text-decoration: none;
@@ -791,3 +799,6 @@ footer .footer--table-icon {
     background-repeat: no-repeat;
 }
 
+.appNoExist {
+    display: none;
+}
