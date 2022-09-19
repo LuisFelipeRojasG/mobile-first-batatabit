@@ -39,7 +39,7 @@ body {
     width: 100%;
 }
 
-/************ Inicio Header *******************/
+/******************* Inicio Header *******************/
 
 header {
     position: relative;
@@ -59,7 +59,7 @@ header img {
     align-self: center;
 }
 
-.header--title-container {
+.header__container--title {
     width: 90%;
     min-width: 288px;
     max-width: 420px;
@@ -69,14 +69,14 @@ header img {
     align-self: center;
 }
 
-.header--title-container h1 {
+.header__container--title h1 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
 }
 
-.header--title-container p {
+.header__container--title p {
     margin-top: 2.4rem;
     font-size: 1.4rem;
     font-weight: 500;
@@ -85,7 +85,7 @@ header img {
     color: var(--soft-orange);
 }
 
-.header--title-container .header--button {
+.header__container--title .header__button {
     position: absolute;
     left: calc(50% - 118px); /*para hacer un calculo*/
     top: 270px;
@@ -105,7 +105,7 @@ header img {
     color: var(--warm-black);
 }
 
-.header--button span {
+.header__button span {
     display: inline-block;
     width: 13px;
     height: 8px;
@@ -115,7 +115,7 @@ header img {
 
 /******************* Fin header *******************/
 
-/******************* inicio main ********************/
+/****************** inicio main *******************/
 
 main {
     width: 100vw;
@@ -124,14 +124,14 @@ main {
     background-color: var(--just-white);
 }
 
-.main--exchange--container {
+.main__exchangeContainer {
     width: 100%;
     height: auto;
     padding-top: 60px;
     text-align: center;
 }
 
-.main--exchange--container-title {
+.main__exchangeContainer--title {
     width: 90%;
     height: 140px;
     max-width: 530px;
@@ -139,7 +139,7 @@ main {
     margin-bottom: 38px;
 }
 
-.main--exchange--container .backgroundImg {
+.main__exchangeContainer .backgroundImg {
     width: 200px;
     height: 200px;
     margin: 0 auto;
@@ -151,7 +151,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--exchange--container h2 {
+.main__exchangeContainer h2 {
     margin-bottom: 24px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -159,7 +159,7 @@ main {
     color: var(--warm-black);
 }
 
-.main--exchange--container p {
+.main__exchangeContainer p {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -168,7 +168,7 @@ main {
 
 /**************** Inicio tablas ******************/
 
-.main--tables--container {
+.exchangeContainer__tablesContainer {
     position: relative;
     display: flex;
     width: 90%;
@@ -177,18 +177,18 @@ main {
     margin: auto;
 }
 
-.slider_tables {
+.exchangeContainer__tablesContainer--sliderTables {
     display: flex;
     justify-content: flex-end;
     width: 205%;
 }
 
-.currency-table {
+.tablesContainer__sliderTables {
     position: relative;
     margin: 0 11vw;
 }
 
-.slider_btn {
+.exchangeContainer__tablesContainer--sliderBtn {
     position: absolute;
     top: 38%;
     width: 24px;
@@ -215,17 +215,16 @@ main {
 
 /**************** Inicio Monedas ****************/
 
-.main--currency--table {
+.tablesContainer__sliderTables--currencyTable {
     width: 50%;
     height: auto;
-    *margin: 0 25px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     font-family: "Inter", "sans-serif";
-    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.50);
 }
 
-.main--currency--table .currency--table--title {
+.tablesContainer__sliderTables--currencyTable .sliderTables__currencyTable--title {
     margin: 0 30px;
     padding: 12px 0;
     font-size: 1.8rem;
@@ -236,7 +235,7 @@ main {
     color: var(--bitcoin-orange);
 }
 
-.currency--table--container {
+.sliderTables__currencyTable--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -246,12 +245,12 @@ main {
     text-align: left;
 }
 
-.currency--table--container table {
+.sliderTables__currencyTable--container table {
     width: 100%;
     height: 100%;
 }
 
-.currency--table--container td {
+.sliderTables__currencyTable--container td {
     width: 50%;
     padding-left: 12px;
     font-size: 1.6rem;
@@ -261,30 +260,30 @@ main {
     background-color: var(--just-white);
 }
 
-.currency--table--container .table__top-left {
+.sliderTables__currencyTable--container .table__top-left {
     border-radius: 15px 0 0 0;
 }
 
-.currency--table--container .table__top-right {
+.sliderTables__currencyTable--container .table__top-right {
     border-radius: 0 15px 0 0;
 }
 
-.currency--table--container .table__bottom-left {
+.sliderTables__currencyTable--container .table__bottom-left {
     border-radius: 0 0 0 15px;
 }
 
-.currency--table--container .table__bottom-right {
+.sliderTables__currencyTable--container .table__bottom-right {
     border-radius: 0 0 15px 0;
 }
 
-.currency--table--container .table__right {
+.sliderTables__currencyTable--container .table__right {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
     color: #757575;
 }
 
-.currency--table--container .down {
+.sliderTables__currencyTable--container .down {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -295,7 +294,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.currency--table--container .up {
+.sliderTables__currencyTable--container .up {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -306,7 +305,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.main--currency--table .currency--table--date {
+.tablesContainer__sliderTables--currencyTable .sliderTables__currencyTable--date {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -323,17 +322,16 @@ main {
 
 /**************** Inicio Comisiones ****************/
 
-.main--commissions--table {
+.tablesContainer__sliderTables--commissionsTable {
     width: 50%;
     height: auto;
-    *margin: 0 25px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     font-family: "Inter", "sans-serif";
-    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.50);
 }
 
-.main--commissions--table .commissions--table--title {
+.tablesContainer__sliderTables--commissionsTable .sliderTables__commissionsTable--title {
     margin: 0 30px;
     padding: 12px 0;
     font-size: 1.8rem;
@@ -344,7 +342,7 @@ main {
     color: var(--secondary-blue);
 }
 
-.commissions--table--container {
+.sliderTables__commissionsTable--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -354,12 +352,12 @@ main {
     text-align: left;
 }
 
-.commissions--table--container table {
+.sliderTables__commissionsTable--container table {
     width: 100%;
     height: 100%;
 }
 
-.commissions--table--container td {
+.sliderTables__commissionsTable--container td {
     width: 50%;
     padding-left: 12px;
     font-size: 1.6rem;
@@ -369,23 +367,23 @@ main {
     background-color: var(--just-white);
 }
 
-.commissions--table--container .table__top-left {
+.sliderTables__commissionsTable--container .table__top-left {
     border-radius: 15px 0 0 0;
 }
 
-.commissions--table--container .table__top-right {
+.sliderTables__commissionsTable--container .table__top-right {
     border-radius: 0 15px 0 0;
 }
 
-.commissions--table--container .table__bottom-left {
+.sliderTables__commissionsTable--container .table__bottom-left {
     border-radius: 0 0 0 15px;
 }
 
-.commissions--table--container .table__bottom-right {
+.sliderTables__commissionsTable--container .table__bottom-right {
     border-radius: 0 0 15px 0;
 }
 
-.commissions--table--container .table__right {
+.sliderTables__commissionsTable--container .table__right {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.7rem;
@@ -393,7 +391,7 @@ main {
     color: #757575;
 }
 
-.main--commissions--table .commissions--table--date {
+.tablesContainer__sliderTables--commissionsTable .sliderTables__commissionsTable--date {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -418,7 +416,7 @@ main {
 
 /************ Inicio detalles Prod ***********/ 
 
-.main-product-detail {
+.main__productDetail {
     position: relative;
     display: flex;
     justify-content: center;
@@ -428,16 +426,16 @@ main {
     background-color: var(--warm-black);
 }
 
-.product-detail--title {
+.main__productDetail--title {
     position: absolute;
-    width: 288px;
+    width: 92%;
     min-height: 120px;
     height: auto;
     margin-top: 30px;
     text-align: center;
 }
 
-.product-detail--title h2 {
+.main__productDetail--title h2 {
     margin-bottom: 20px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -445,7 +443,7 @@ main {
     color: var(--just-white);
 }
 
-.product-detail--title p {
+.main__productDetail--title p {
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -453,14 +451,14 @@ main {
     color: var(--card-text);
 }
 
-.product-cards--container {
+.main__productCards--container {
     position: absolute;
     top: 180px;
     width: 95vw;
     height: auto;
 }
 
-.product-detail--card {
+.productCards__container--detail {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -472,7 +470,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.product-detail--card .clock {
+.productCards__container--detail .clock {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -483,7 +481,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.product-detail--card .eye {
+.productCards__container--detail .eye {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -494,7 +492,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.product-detail--card .dollar {
+.productCards__container--detail .dollar {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -505,7 +503,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.product-detail--card .check {
+.productCards__container--detail .check {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -516,7 +514,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.product--card-title {
+.productCards--title {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -524,17 +522,17 @@ main {
     color: var(--just-white);
 }
 
-.product--card-body {
+.productCards--body {
     font-size: 1.4rem;;
     color: var(--card-text);
 }
 
 /************** Fin detalle prod ***************/
 
-.bitcoin-img-container {
+.main__bitcoinImg--container {
     position: relative;
     width: 100%;
-    max-width: 516px;
+    max-width: 100vw;
     height: 387px;
     margin-bottom: 64px;
     background-image: url('../assets/images/bitcoinbaby1.jpg');
@@ -543,7 +541,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.bitcoin-img-container h2 {
+.main__bitcoinImg--container h2 {
     position: absolute;
     top: 64px;
     left: calc(50% - 80px);
@@ -555,7 +553,7 @@ main {
 
 /************* Inicio planes  ******************/
 
-.main--plans-container {
+.main__plansContainer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 60px 24px 40px 30px 260px 64px;
@@ -565,20 +563,20 @@ main {
     text-align: center;
 }
 
-.main--plans-container h2 {
+.main__plansContainer h2 {
     grid-row: 1;
     font-size: 2.4rem;
     color: var(--warm-black);
 }
 
-.main--plans-container > p { 
+.main__plansContainer > p { 
     grid-row: 3;
     font-size: 1.4rem;
     padding: 0 11px;
     color: #757575;
 }
 
-.container_slider {
+.main__plansContainer--slider {
     position: relative;
     grid-row: 5;
     width: 100%;
@@ -586,14 +584,14 @@ main {
     overflow: hidden;
 }
 
-.main--plans--container-cards {
+.plansContainer__slider--cards {
     display: flex;
     justify-content: flex-end;
     width: 100vw;
     height: 280px;
 }
 
-.container-card {
+.slider__cards--containerCard {
     position: relative;
     display: flex;
     width: 100%;
@@ -625,28 +623,27 @@ main {
     background-repeat: no-repeat;
 }
 
-.container-card .plans--container-card {
+.slider__cards--containerCard .cards__containerCard--plans {
     scroll-snap-align: center;
     width: 190px;
     height: 240px;
-    *margin: 0 50px;
     margin-top: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.50);
 }
 
-.plans--container-card {
+.cards__containerCard--plans {
     display: grid;
     grid-template-columns: 190px;
     grid-template-rows: repeat(2, 1fr);;
 }
 
-.plans--container-group1 {
+.containerCard__plans--group1 {
     display: grid;
     grid-auto-rows: min-content;
 }
 
-.plans--container-card h3 {
+.cards__containerCard--plans h3 {
     grid-column: 2/3;
     grid-row: 1;
     width: 80px;
@@ -657,7 +654,7 @@ main {
     color: #000000;
 }
 
-.plans--container-card .dollar-symbol {
+.cards__containerCard--plans .dollarSymbol {
     grid-column: 1;
     grid-row: 2;
     justify-self: right;
@@ -670,7 +667,7 @@ main {
     line-height: 1.5rem;
 }
 
-.plans--container-card .cost-plan {
+.cards__containerCard--plans .costPlan {
     grid-column: 2;
     grid-row: 2;
     width: 65px;
@@ -683,13 +680,13 @@ main {
     letter-spacing: -0.08em;
 }
 
-.plans--container-group2 {
+.containerCard__plans--group2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: min-content;
 }
 
-.plans--container-card .description-plan {
+.cards__containerCard--plans .descriptionPlan {
     grid-row: 1;
     width: 158px;
     height: 30px;
@@ -703,7 +700,7 @@ main {
     color: #757575;
 }
 
-.plans--container-group2 .choose {
+.containerCard__plans--group2 .choose {
     grid-row: 2;
     display: flex;
     justify-content: center;
@@ -761,7 +758,7 @@ footer a {
     color: var(--off-white);
 }
 
-footer .footer--table-links {
+footer .footer__table--links {
     padding-top: 40px;
 }
 
@@ -787,7 +784,7 @@ footer .hackernews {
     top: 8px;
 }
 
-footer .footer--table-icon {
+footer .footer__table--icon {
     display: inline-block;
     width: 64px;
     height: 50px;
@@ -797,8 +794,4 @@ footer .footer--table-icon {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.appNoExist {
-    display: none;
 }

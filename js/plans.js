@@ -1,5 +1,5 @@
-const sliderPlans = document.getElementById("slider_plans");
-const containerCards = document.querySelectorAll(".container-card");
+const sliderPlans = document.getElementById("sliderPlans");
+const containerCards = document.querySelectorAll(".slider__cards--containerCard");
 const containerCardsLast = containerCards[containerCards.length - 1];
 
 const planArrowLeft = document.querySelector(".arrowLeftPlans");
@@ -8,7 +8,7 @@ const planArrowRight = document.querySelector(".arrowRightPlans");
 sliderPlans.insertAdjacentElement('afterbegin', containerCardsLast);
 
 function moveNext() {
-  let containerCardsFirst = document.querySelectorAll(".container-card")[0];
+  let containerCardsFirst = document.querySelectorAll(".slider__cards--containerCard")[0];
   sliderPlans.style.marginLeft = "-100%";
   sliderPlans.style.transition = "all .5s";
   setTimeout(() => {
@@ -19,7 +19,7 @@ function moveNext() {
 }
 
 function movePrev() {
-  const containerCards = document.querySelectorAll(".container-card");
+  const containerCards = document.querySelectorAll(".slider__cards--containerCard");
   const containerCardsLast = containerCards[containerCards.length - 1];
   
   sliderPlans.style.marginLeft = "100%";
