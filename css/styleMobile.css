@@ -764,6 +764,7 @@ footer .footer__table--links {
 
 footer ul {
     padding-bottom: 8px;
+    list-style: none;
 }
 
 footer .linkedin {

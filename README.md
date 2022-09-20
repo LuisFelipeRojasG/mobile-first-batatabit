@@ -1,6 +1,6 @@
 
 # BatataBit
-### HTML | CSS | MOBILE FIRST | RESPONSIVE DESIGN
+### HTML | CSS | JavaScript | BEM | MOBILE FIRST | RESPONSIVE DESIGN
 
 Proyecto realizado en el curso de Responsive Design: Maquetación Mobile First de la escuela de Desarrollo Web en Platzi.
 
